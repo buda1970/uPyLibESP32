@@ -6,8 +6,10 @@ class GPRMC():
       self.strGprs   = ''
       self.fecha     = '000000'
       self.hora      = '000000'
-      self.valido    = False
+      self.valido    = 'V'
+      self.latSign   = '+'
       self.latitud   = 0.000000
+      self.lonSign   = '+'
       self.longitude = 0.000000
       self.velocidad = 0
       self.rumbo     = 0
@@ -60,15 +62,19 @@ class GPRMC():
          self.velocidad = listaGprmc[7]
          self.latitud   = float(listaGprmc[3])
          if listaGprmc[4].upper() == 'S':
-            self.latitud *= -1
+            self.latSign = '-'
+         else:
+            self.latSign = '+'
          self.longitud   = float(listaGprmc[5])
          if listaGprmc[6].upper() == 'W':
-            self.longitud *= -1
-         if listaGprmc[2].upper() == 'A':
-            self.valido = True
+            self.lonsign = '-'
          else:
-            self.valido = False
-         
+            self.lonsign = '+'
+         if listaGprmc[2].upper() == 'A':
+            self.valido = 'A'
+         else:
+            self.valido = 'V'
+            
          return True
       else:
          return False
