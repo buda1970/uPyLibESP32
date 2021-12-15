@@ -16,9 +16,6 @@ class GPS(GPRMC):
       gprmc = GPRMC()
       serial.write(gprmc.initStr)
       
-   def __del__(self):
-      pass
-   
    def leerPosicion(self):
       try:
          mensaje = serial.readline()

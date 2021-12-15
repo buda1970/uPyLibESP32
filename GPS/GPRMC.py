@@ -16,12 +16,6 @@ class GPRMC():
       self.strGprsOk = False
       self.initStr   = bytes('$PMTK314,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0', 'utf-8')
    
-   def __del__(self):
-      pass
-      
-   # def initStr(self):
-   #    return self.initStr
-      
    def gprsStrValido(self):
       
       if self.strGprs[0:6] == bytes('$GPRMC', 'utf-8'):

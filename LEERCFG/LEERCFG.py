@@ -22,9 +22,6 @@ class LEERCFG():
             with open(self.archivo, 'r') as self.config:
                 self.configuracion = json.load(self.config)
         
-    def __del__(self):
-        self.config.close()
-    
     def leerConfiguracion(self, item):
         return self.configuracion[item] 
     
