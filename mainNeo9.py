@@ -1,4 +1,4 @@
-from NEO9.NEO9 import NEO9
+from NEO9 import *
 
 def main():
    valido    = 'A'

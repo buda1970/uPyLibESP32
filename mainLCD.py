@@ -1,7 +1,7 @@
 
 from machine import Pin, I2C
 import utime
-from LCD.I2cLcd import *
+from LCD import *
 
 I2C_NUM_ROWS = 4
 I2C_NUM_COLS = 16

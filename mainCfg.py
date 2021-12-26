@@ -1,4 +1,4 @@
-from LEERCFG.LEERCFG import LEERCFG
+from LEERCFG import *
 
 def main():
     

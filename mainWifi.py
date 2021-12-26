@@ -1,5 +1,5 @@
 import usocket as socket
-from WIFI.WIFI import WIFI
+from WIFI import *
 
 def main():
     wifi = WIFI('GatoDumas', 'GatoAnitaKevin!')

@@ -1,4 +1,4 @@
-from GPS.GPS import *
+from GPS import *
 
 def main():
    

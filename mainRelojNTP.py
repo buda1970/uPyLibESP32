@@ -1,5 +1,5 @@
-from LCD.I2cLcd import *
-from WIFI.WIFI import WIFI
+from LCD import *
+from WIFI import WIFI
 from machine import Pin, I2C
 import ntptime   #NTP-time (obtenida desde pool.ntp.org)                      
 from machine import RTC
