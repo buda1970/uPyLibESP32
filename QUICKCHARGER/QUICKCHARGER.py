@@ -1,3 +1,5 @@
+# D+ corresponde pin GPIO25 D- corresponde pin GPIO26
+
 import time
 from machine import DAC
 import machine
